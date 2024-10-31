@@ -3,9 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <h1>La Maison du <span>Chocolat.</span></h1>
+        <nav>
+            <ul class="nav__list">
+                <li class="nav__item">ACCUEIL</li>
+                <li class="nav__item">LA CHOCOLATERIE</li>
+                <li class="nav__item">RECETTE</li>
+                <li class="nav__item">ACTUS</li>
+                <li class="nav__item">CONTACT</li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h2 class="hero__title">NOUVELLE SAISON</h2>
+            <h2 class="hero__title hero__title__weight">NOUVEAUX CHOCOLATS</h2>
+            <button class="hero__button">Par ici</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="quality-chart">
+            <div class="quality-chart__item">
+                <img src="images/steps-icon-1.png" alt="" class="quality-chart__icon">
+                <h3 class="quality-chart__title">QUALITE</h3>
+                <p class="quality-chart__description">Une charte en 36 points encadre la qualité de nos chocolats et l'activité de nos booutiques.</p>
+            </div>
+            <div class="quality-chart__item">
+                <img src="images/steps-icon-2.png" alt="" class="quality-chart__icon">
+                <h3 class="quality-chart__title">ECOLOGIE</h3>
+                <p class="quality-chart__description">Nous privilégions et encourageons les modes de culture, de récolte et de préparation 100% naturels.</p>
+            </div>
+            <div class="quality-chart__item">
+                <img src="images/steps-icon-3.png" alt="" class="quality-chart__icon">
+                <h3 class="quality-chart__title">EQUITABLE</h3>
+                <p class="quality-chart__description">La prime du commerce équitable et le prix minimum garantissent aux petits producteurs une juste rémunération.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card__item card__item__one">
+                <div class="card__container">
+                    <h3 class="card__title">LE CLUB</h3>
+                    <p class="card__description">Inscrivez-vous dès maintenant et profitez de nos offres spéciales!</p>
+                    <button class="card__button">Plus d'infos</button>
+                </div>
+            </div>
+            <div class="card__item card__item__two">
+                <div class="card__container">
+                    <h3 class="card__title">NOS ACTUS</h3>
+                    <p class="card__description">Offres spéciales, nouvelles gammes de produits, Evènements...</p>
+                    <button class="card__button">Plus d'infos</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2 class="contact-form__title">CONTACTEZ-NOUS</h2>
+            <p class="contact-form__description">Nous sommes une entreprise de chocolaterie proposant toutes sortes de chocolats mais aussi des cours pour vous permettre de préparer vous même vos chocolats.</p>
+            <form class="contact-form__form">
+                <div class="contact-form__field">
+                    <label for="nom" class="contact-form__label">Nom</label>
+                    <input type="text" id="nom" name="nom"  placeholder="Votre nom" class="contact-form__input">
+                </div>
+                <div class="contact-form__field">
+                    <label for="email" class="contact-form__label">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" class="contact-form__input">
+                </div>
+                <input type="submit" value="OK" class="contact-form__submit">
+            </form>
+        </section>
+
+        <footer>
+            <h2 class="footer__title">La Maison du <span>Chocolat.</span></h2>
+            <p class="footer__copyrigh">Copyrigh © Tous droits réservés.</p>
+        </footer>
+    </main>
 </body>
 </html>
