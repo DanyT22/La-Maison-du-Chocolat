@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3 {
+    color: $couleurPrincipale;
+    font-family: crete round;
+}
+p{
+    color: $couleurTexte;
+    font-size: 10px;
+    font-family: roboto;
+}
+span{
+    color: $couleurSecondaire;
+}
+li{
+    list-style: none;
+}
+@media (min-width: $laptop){
+    p{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,50 @@
+.card{
+    background-color: #efefef;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    &__item{
+        height: 200px;
+        width: 400px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    &__container{
+        width: 40%;
+        height: 200px;
+        background-color: white;
+    }
+
+    &__item__one{
+        background-image: url(../images/article-image-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__item__two{
+        background-image: url(../images/article-image-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__title{
+        padding: 20px 0;
+    }
+
+    &__description{
+        border-top: solid #45454527;
+        padding: 20px 10px;
+    }
+
+    &__button{
+        @include button;
+        padding: 0 10px;
+    }
+
+    @media (min-width: $laptop){
+        justify-content: center;
+    }
+}

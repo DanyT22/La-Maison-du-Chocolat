@@ -1,0 +1,21 @@
+.quality-chart{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    &__item, &__icon{
+        margin: 20px;
+    }
+
+    &__title{
+        margin: 10px;
+    }
+
+    @media (min-width : $laptop){
+        justify-content: center;
+
+        &__item{
+            max-width: 20%;
+        }
+    }
+}

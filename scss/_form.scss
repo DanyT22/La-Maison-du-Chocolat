@@ -1,0 +1,43 @@
+.contact-form{
+    text-align: center;
+    padding: 10px 30px;
+
+    &__description{
+        margin: 10px;
+        padding: 10px;
+        border-top: solid #87dced;
+    }
+
+    &__field{
+        margin: 10px;
+    }
+
+    &__input{
+        padding: 5px;
+    }
+
+    &__submit{
+        @include button;
+        padding: 5px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    @media (min-width : $laptop) {
+        &__description{
+            margin: 10px auto;
+            max-width: 60%;
+        }
+
+        &__form{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        &__submit{
+            margin: 0;
+            padding: 10px;
+        }
+    }
+}

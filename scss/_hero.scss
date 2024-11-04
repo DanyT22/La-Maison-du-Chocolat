@@ -1,0 +1,29 @@
+.hero{
+    background-image: url(../images/main.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 11em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title{
+        color:white 
+    }
+
+    &__button{
+        @include button;
+        margin-top: 3em;
+        padding: 10px;
+    }
+
+    @media (min-width : $laptop){
+        width: 100%;
+        height: 500px;
+
+    &__button{
+        padding: 10px 20px;
+    }
+    }
+}
